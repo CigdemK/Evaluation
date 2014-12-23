@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Video Quality Evaluation</title>
+    <script type="text/javascript">
+        function myLoadScript() {
+            document.getElementById("mainPanel").style.height = $(window).height()-15 + "px";
+        }
+    </script>
+    <link href="Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body onload="myLoadScript();">
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <div id="mainPanel" class="panel panel-default">
+        <div class="panel-heading" style="">
+            <h1 style="text-align:center">Video Quality Evaluation</h1>
+        </div>
+        <div class="panel-body" style="height:80%;" >
+            <div class="row" style="height:100%;">
+                <div class="col-md-2" style="height:100%;"></div>
+                <div class="col-md-5" style="align-items:center;height:100%;">
+                    <table style="height:100%;align-items:center;vertical-align:middle;">
+                        <tr style="height:100%;">
+                            <td style="height:100%;">
+                                <h4>Welcome to the evaluation page of my research. </h4>
+                                <h4>I want you to evaluate the quatlity of videos by selecting the most appealing one.</h4> 
+                                <h4>On each screen, you will see 3 videos: 1 original on the left and 2 processed on the right.</h4> 
+                                <h4>Select one of the porcessed ones by clicking the green button right next to it.</h4>
+                                <h4 class="text-primary">The next screen will be a trial screen and your response will not be discarded. </h4>
+                                <h4 class="text-primary">Lets start!</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4" style="align-items:center;height:100%;">
+                    <table style="align-items:center;vertical-align:middle;height:100%;">
+                        <tr style="height:100%;">
+                            <td style="height:100%;">
+                                <button type="submit" class="btn btn-primary btn-lg" style="vertical-align:middle;" 
+                                    onclick="window.location.href='TrialPage.html'">
+                                    <span class="glyphicon glyphicon-arrow-right"></span> Take me to the trial screen!
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-1" style="height:100%;"></div>
+            </div>
+        </div>
+        <div class="panel-footer" >
+            <h5 style="text-align:center">Cigdem Kocberber, Bogazici University, Turkey</h5>
+        </div>
+    </div>
+
+
+</body>
+</html>
